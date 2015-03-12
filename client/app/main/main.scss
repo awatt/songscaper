@@ -1,0 +1,51 @@
+.thing-form {
+    margin: 20px 0;
+}
+
+#banner {
+    border-bottom: none;
+    margin-top: -20px;
+}
+
+#banner h1 {
+    font-size: 30px;
+    line-height: 1;
+    // letter-spacing: -1px;
+}
+
+.hero-unit {
+    position: relative;
+    padding: 30px 15px;
+    color: #F5F5F5;
+    text-align: center;
+    // margin-top: 50px;
+    // text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    // background: #4393B9;
+    // background:  url('../assets/images/songscaper_logo_background.jpg') no-repeat center, radial-gradient(circle at center, transparent, #fff);
+    // background: radial-gradient(ellipse, transparent 25%, #fff 50%), url("../assets/images/songscaper_logo_background.jpg") no-repeat center;
+    // background-size: cover;
+}
+
+.footer {
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 70px;
+    border-top: 1px solid #E5E5E5;
+}
+
+.container {
+    font-family: 'Ruda', sans-serif;
+}
+
+// .images {
+//     border-radius: 4px;
+// }
+
+.logo {
+    max-width: 50%;
+    height: 175px;
+    font-size: 10px;
+    background: radial-gradient(ellipse, transparent 55%, #fff 65%), url("../assets/images/songscaper_img2.jpg") no-repeat center;
+}
+
+// background: linear-gradient(#ffa949, transparent 90%), linear-gradient(0deg, #fff, transparent), #ffa949 url('../img/mountains.jpg') no-repeat center;
