@@ -9,41 +9,15 @@
 }
 
 
-// //model
-// .axis path,
-// .axis line{
-//   fill: none;
-//   stroke:black;
-//   shape-rendering:crispEdge;
-// }
+.days-hours-heatmap{padding: 20px 0 20px 0;width: 500px;margin: 0 auto;}
+.days-hours-heatmap .calibration{margin-bottom: 15px;width:400px;}
+.days-hours-heatmap .calibration .group{display: inline-block;}
+.days-hours-heatmap .calibration .description{width:108px;}
+.days-hours-heatmap .calibration .description>label:last-child{float:right;}
+.days-hours-heatmap .calibration>.display-control{float:right;}
+.days-hours-heatmap .calibration>.display-control label{vertical-align: top;}
+.days-hours-heatmap .calibration>.display-control input[type='radio']{cursor: pointer;}
 
-// .axis text{
-//   font-family: sans-serif;
-//   font-size: 10px;
-// }
-
-// h1{
-//   font-family: sans-serif;
-//   font-weight: bold;
-//   font-size: 16px;
-// }
-// .tick
-// {
-//   stroke-dasharray: 1, 2;
-// }
-
-
-
-// .mapBody {font-family:arial, 'Hiragino Sans GB',Tahoma, Arial, Helvetica, STHeiti;font-size: 14px;}
-// .days-hours-heatmap{padding: 20px 0 20px 0;width: 500px;margin: 0 auto;}
-// .days-hours-heatmap .calibration{margin-bottom: 15px;width:400px;}
-// .days-hours-heatmap .calibration .group{display: inline-block;}
-// .days-hours-heatmap .calibration .description{width:108px;}
-// .days-hours-heatmap .calibration .description>label:last-child{float:right;}
-// .days-hours-heatmap .calibration>.display-control{float:right;}
-// .days-hours-heatmap .calibration>.display-control label{vertical-align: top;}
-// .days-hours-heatmap .calibration>.display-control input[type='radio']{cursor: pointer;}
-
-// .days-hours-heatmap .heatmap .axis path{display: none;}
-// .days-hours-heatmap .heatmap .axis line{fill: none;stroke: #000;shape-rendering: crispEdges;}
-// .days-hours-heatmap .heatmap .axis text{font-size: 12px}
+.days-hours-heatmap .heatmap .axis path{display: none;}
+.days-hours-heatmap .heatmap .axis line{fill: none;stroke: #000;shape-rendering: crispEdges;}
+.days-hours-heatmap .heatmap .axis text{font-size: 12px}

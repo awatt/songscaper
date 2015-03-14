@@ -37,15 +37,56 @@
     font-family: 'Ruda', sans-serif;
 }
 
-// .images {
-//     border-radius: 4px;
-// }
 
-.logo {
-    max-width: 50%;
-    height: 175px;
-    font-size: 10px;
-    background: radial-gradient(ellipse, transparent 55%, #fff 65%), url("../assets/images/songscaper_img2.jpg") no-repeat center;
+.fullscreen {
+  width: 110%;
+  height: 110%;
+  position: fixed;
+  z-index: -1;
+  left: -10%;
+  top: -10%;
+  background-image: url('../assets/images/songscaper_img3.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  .fullscreen-overlay {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+  }
 }
+
+
+.artist_image {
+    height: 300px;
+    width: 300px
+}
+
+.album_image {
+    height: 300px;
+    width: 300px
+}
+
+
+.days-hours-heatmap{padding: 20px 0 20px 0;width: 500px;margin: 0 auto;}
+.days-hours-heatmap .calibration{margin-bottom: 15px;width:400px;}
+.days-hours-heatmap .calibration .group{display: inline-block;}
+.days-hours-heatmap .calibration .description{width:108px;}
+.days-hours-heatmap .calibration .description>label:last-child{float:right;}
+.days-hours-heatmap .calibration>.display-control{float:right;}
+.days-hours-heatmap .calibration>.display-control label{vertical-align: top;}
+.days-hours-heatmap .calibration>.display-control input[type='radio']{cursor: pointer;}
+
+.days-hours-heatmap .heatmap .axis path{display: none;}
+.days-hours-heatmap .heatmap .axis line{fill: none;stroke: #000;shape-rendering: crispEdges;}
+.days-hours-heatmap .heatmap .axis text{font-size: 12px}
+
+
+
+
+
+
+
 
 // background: linear-gradient(#ffa949, transparent 90%), linear-gradient(0deg, #fff, transparent), #ffa949 url('../img/mountains.jpg') no-repeat center;
