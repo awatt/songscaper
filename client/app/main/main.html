@@ -75,9 +75,11 @@
 
 </div>
 
-   <div class="days-hours-heatmap">
+   <!-- MODEL CHART -->
+
+<!--    <div class="days-hours-heatmap"> -->
       <!-- calibration and render type controller -->
-      <div class="calibration" role="calibration">
+<!--       <div class="calibration" role="calibration">
         <div class="group" role="example">
           <svg width="120" height="17">
           </svg>
@@ -98,9 +100,41 @@
         </div>
       </div>
 
-      <div analysis-chart></div>
+      <div model-chart></div> -->
       <!-- heatmap -->
-      <svg role="heatmap" class="heatmap"></svg>
+<!--       <svg role="heatmap" class="heatmap"></svg>
+    </div>
+ -->
+
+
+      <!-- FINAL CHART -->
+
+    <div class="days-hours-heatmap" ng-if="analysisResults.length">
+      <!-- calibration and render type controller -->
+      <div class="calibration" role="calibration2">
+        <div class="group" role="example2">
+          <svg width="120" height="17">
+          </svg>
+          <div role="description2" class="description">
+            <label>Less</label>
+            <label>More</label>
+          </div>        
+        </div>
+        <div role="toggleDisplay2" class="display-control">
+          <div>
+            <input type="radio" name="displayType2" checked/>
+            <label>count</label>
+          </div>
+          <div>
+            <input type="radio" name="displayType2"/>
+            <label>daily</label> 
+          </div>
+        </div>
+      </div>
+
+      <div analysis-chart analysis-results="analysisResults"></div>
+      <!-- heatmap -->
+      <svg role="heatmap2" class="heatmap"></svg>
     </div>
 
 

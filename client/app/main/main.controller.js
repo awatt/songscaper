@@ -76,21 +76,32 @@ angular.module('songscaperApp')
         })
     }
 
+    Array.max = function( array ){
+    return Math.max.apply( Math, array );
+    };
+
     $scope.analyzeTrack = function(track){
         resetResults()
         $http.post('/api/songs/analyzeTrack', {'analysis_url': track.analysis_url}).success(function(data) {
             var data = JSON.parse(data);
+            console.log(data.segments[0])
             data.segments.forEach(function(el){
+              for(var j = 0; j<4; j++){
+                el.pitches[el.pitches.indexOf(Array.max(el.pitches))] = -1;
+            }
+            for (var i = 0; i < el.pitches.length; i++){
               $scope.analysisResults.push({
                 start: el.start,
                 // duration: el.duration,
-                pitches: el.pitches
+                pitch: i,
+                value: el.pitches[i]
             })
-          })
+          }
+      })
             var analysisData = $scope.analysisResults 
-            console.log(analysisData) 
+            console.log($scope.analysisResults) 
         })
     }
 
-    
-  });
+
+});
